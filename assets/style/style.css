@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --colorblue2-:#b0c6d4;
+    --colorblue-:#1e3765;
+    --colorwhite-:#f8f9fc;
+    --colorblack-:#0000;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: var(--colorblue-);
+    color: var(--colorwhite-);
+}
+header{
+    background-color: rgba(0, 0, 0, 0.777);
+    padding: 2rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top:0;
+   
+
+}
+.ul-nav{
+    display: flex;
+    gap:1rem
+
+}
+.ul-nav li a{
+    color: var(--colorwhite-);
+    transition: all 3s;
+}
+.ul-nav li a:hover{
+    color: var(--colorwhite-);
+    border-bottom: 1px solid;
+}
+.nav{
+
+}
+.title{
+    font-size: 3rem;
+    color: var(--colorwhite-);
+}
+h1{
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size:3rem;
+    margin:auto;
+    width: fit-content;
+}
+.contanier{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.contanier div{
+    background-color: var(--colorblue2-);
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 600px;
+}
+.contanier div a img{
+    max-width: 500px;
+}
+/* main */
+main{
+    padding: 20rem 1rem;
+}
+footer{
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 2rem;
+    color:white;
+    text-align: center;
+}
+.card-deck{
+    max-width: 40rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--colorblue2-);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+
+}
+.card-deck img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.card-deck a{
+    text-align: center;
+    background-color: var(--colorblue-);
+    padding: 1rem 2rem;
+    color: var(--colorwhite-);
+    font-size: 2rem;
+    box-shadow: 5px 5px 0px black;
+    transition: all .3s;
+
+}
+.card-deck a:focus{
+    background-color: #0f1b31;
+    box-shadow: -1px -1px 0px black;
+    transform: translate(6px, 6px);
+
+}
+.deck{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
