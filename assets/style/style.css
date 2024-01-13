@@ -14,6 +14,7 @@ body{
     color: var(--colorwhite-);
 }
 header{
+    z-index: 3;
     background-color: rgba(0, 0, 0, 0.777);
     padding: 2rem;
     display:flex;
@@ -41,6 +42,8 @@ header{
 
 }
 .title{
+    letter-spacing: 1.5px;
+
     font-size: 3rem;
     color: var(--colorwhite-);
 }
@@ -55,21 +58,40 @@ h1{
     display:flex;
     flex-wrap: wrap;
     align-items: start;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
 }
 .contanier div{
+    box-shadow: 0px 0px 15px black;
     background-color: var(--colorblue2-);
     padding: 2rem;
     border-radius: 20px;
     max-width: 600px;
+    transition: all .3s;
+}
+.contanier div:hover{
+    background-color: #2d5f7e;
 }
 .contanier div a img{
-    max-width: 500px;
+    width:100px;
+  height: auto;
+    object-fit: cover;
+    opacity: .8;
+}
+.contanier div a img:hover{
+    opacity: 1;
+}
+@media screen and (min-width: 46.25em) {
+    .contanier div a img{
+        width:200px; 
+    }
+    .contanier{
+        justify-content: center;
+    }
 }
 /* main */
 main{
-    padding: 20rem 1rem;
+    padding: 15rem 1rem;
 }
 footer{
     font-size: 1.5rem;
@@ -79,6 +101,7 @@ footer{
     text-align: center;
 }
 .card-deck{
+    box-shadow: 0px 0px 15px black;
     max-width: 40rem;
     padding: 2rem;
     border-radius: 10px;
@@ -90,9 +113,15 @@ footer{
 
 }
 .card-deck img{
+   
     width: 100%;
     border-radius: 10px;
+    transition: all .3s;
 
+}
+.card-deck img:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 0px 15px black;
 }
 .card-deck a{
     text-align: center;
@@ -103,6 +132,9 @@ footer{
     box-shadow: 5px 5px 0px black;
     transition: all .3s;
 
+}
+.card-deck a:hover{
+    background-color: #0f1b31;
 }
 .card-deck a:focus{
     background-color: #0f1b31;
@@ -116,4 +148,5 @@ footer{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-around;
+    row-gap: 4rem;
 }
