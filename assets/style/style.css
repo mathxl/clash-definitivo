@@ -1,67 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
-
-:root{
-    font-size: 62.5%;
-    --colorblue2-:#b0c6d4;
-    --colorblue-:#1e3765;
-    --colorwhite-:#f8f9fc;
-    --colorblack-:#0000;
+@font-face {
+    font-family: 'supercell';
+    src: url(../font/supercell-magic-webfont.ttf);
 }
-body{
-    font-family: 'Roboto', sans-serif;
+
+:root {
+    font-size: 62.5%;
+    --colorblue2-: #b0c6d4;
+    --colorblue-: #1e3765;
+    --colorwhite-: #f8f9fc;
+    --colorblack-: #0000;
+}
+
+body {
+    font-family: 'supercell';
+    letter-spacing: 1.5px;
     font-weight: 700;
     background-color: var(--colorblue-);
     color: var(--colorwhite-);
 }
-header{
+
+header {
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.777);
+    background-color: rgba(0, 0, 0, 0.897);
     padding: 2rem;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     position: sticky;
-    top:0;
-   
+    top: 0;
+
 
 }
-.ul-nav{
+
+.ul-nav {
     display: flex;
-    gap:1rem
-
+    gap: 1rem
 }
-.ul-nav li a{
+
+.ul-nav li a {
     color: var(--colorwhite-);
     transition: all 3s;
 }
-.ul-nav li a:hover{
+
+.ul-nav li a:hover {
     color: var(--colorwhite-);
     border-bottom: 1px solid;
 }
-.nav{
 
-}
-.title{
+
+
+.title {
     letter-spacing: 1.5px;
 
     font-size: 3rem;
     color: var(--colorwhite-);
 }
-h1{
+
+h1 {
     padding-bottom: 2rem;
     text-transform: uppercase;
-    font-size:3rem;
-    margin:auto;
+    font-size: 3rem;
+    margin: auto;
     width: fit-content;
+
 }
-.contanier{
-    display:flex;
+
+.contanier {
+    display: flex;
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
     gap: 2rem;
 }
-.contanier div{
+
+.contanier div {
     box-shadow: 0px 0px 15px black;
     background-color: var(--colorblue2-);
     padding: 2rem;
@@ -69,38 +81,53 @@ h1{
     max-width: 600px;
     transition: all .3s;
 }
-.contanier div:hover{
+
+.contanier div:hover {
     background-color: #2d5f7e;
 }
-.contanier div a img{
-    width:100px;
-  height: auto;
+
+.contanier div a img {
+    width: 100px;
+    height: auto;
     object-fit: cover;
     opacity: .8;
 }
-.contanier div a img:hover{
+
+.contanier div a img:hover {
     opacity: 1;
 }
+
 @media screen and (min-width: 46.25em) {
-    .contanier div a img{
-        width:200px; 
+    .contanier div a img {
+        width: 200px;
     }
-    .contanier{
+
+    .contanier {
         justify-content: center;
     }
 }
+
 /* main */
-main{
-    padding: 15rem 1rem;
+main {
+    padding: 15rem 5rem;
+    background: #6d95df;
+    background-image: url(../fndo/claswall.jpg);
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-blend-mode: multiply;
+
 }
-footer{
+
+footer {
     font-size: 1.5rem;
     background-color: black;
     padding: 2rem;
-    color:white;
+    color: white;
     text-align: center;
 }
-.card-deck{
+
+.card-deck {
     box-shadow: 0px 0px 15px black;
     max-width: 40rem;
     padding: 2rem;
@@ -109,21 +136,24 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
 
 }
-.card-deck img{
-   
+
+.card-deck img {
+
     width: 100%;
     border-radius: 10px;
     transition: all .3s;
 
 }
-.card-deck img:hover{
-    transform: scale(1.06);
+
+.card-deck img:hover {
+    transform: scale(1.04);
     box-shadow: 0px 0px 15px black;
 }
-.card-deck a{
+
+.card-deck a {
     text-align: center;
     background-color: var(--colorblue-);
     padding: 1rem 2rem;
@@ -133,20 +163,74 @@ footer{
     transition: all .3s;
 
 }
-.card-deck a:hover{
+
+.card-deck a:hover {
     background-color: #0f1b31;
 }
-.card-deck a:focus{
+
+.card-deck a:focus {
     background-color: #0f1b31;
     box-shadow: -1px -1px 0px black;
     transform: translate(6px, 6px);
 
 }
-.deck{
+
+.deck {
     padding: 3rem 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-around;
     row-gap: 4rem;
+}
+
+.home {
+
+    width: 305px;
+    height: 320px;
+    border-radius: 22px;
+    transition: 0.4s;
+}
+.home:hover{
+    transform: scale(1.04);
+}
+
+.aba{
+    background-color: #041944;
+    padding: 17px;
+    border-radius: 20px;
+    width: fit-content;
+    height: min-content;
+    transition: 0.4s;
+}
+.aba:hover{
+    background-color: #0e7abd;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+span{
+    font-size: 3rem;
+}
+.contanier{
+    background-color: #041944be;
+    padding: 17px;
+    border-radius: 20px;
+    width: fit-content;
+    height: min-content;
+    box-shadow: 0px 0px 10px black;
+}
+.tituloaba{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    border-radius: 13px; 
+    color: #041944;
+    
 }
