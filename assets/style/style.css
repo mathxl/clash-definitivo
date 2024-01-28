@@ -98,18 +98,22 @@ h1 {
 }
 
 @media screen and (min-width: 46.25em) {
+    main {
+        padding: 15rem 0rem;
+    }
     .contanier div a img {
         width: 200px;
     }
 
     .contanier {
         justify-content: center;
+        padding: 0px;
     }
 }
 
 /* main */
 main {
-    padding: 15rem 5rem;
+    padding: 15rem 1rem;
     background: #6d95df;
     background-image: url(../fndo/claswall.jpg);
 background-repeat: no-repeat;
