@@ -13,17 +13,31 @@
 
 <body>
     <header class="header">
+
         <div class="wrapper">
-            <a href="index.html">
-           <p class="title">Matheus</p>
-        </a>
-            <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
-        </div>   
+            <div class="wrapper">
+                <a href="index.html">
+                    <p class="title">Matheus</p>
+                </a>
+                <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
+            </div>
+        </div>
+
 
         <nav class="nav">
-            <ul class="ul-nav">
-                <li><a href="https://www.instagram.com/mattheus_zm/?igsh=ODA1NTc5OTg5Nw%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://github.com/Math1525" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <input class="check" type="checkbox" name="menu" id="menu">
+            <label for="menu">
+                <div class="menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line tree"></div>
+                    </div>
+            </label>
+            <ul class="main-nav-ul">
+                <li class="main-nav-itens"><a href="index.html" onclick="desmarcarCheckbox()">inicio</a></li>
+                <li class="main-nav-itens"><a href="abacartas.html" onclick="desmarcarCheckbox()">decks</a></li>
+                <li class="main-nav-itens"><a href="arenas.html" onclick="desmarcarCheckbox()">arenas</a></li>
+                <li class="main-nav-itens" ><a href="contato.html" onclick="desmarcarCheckbox()">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -32,6 +46,7 @@
 
         <div class="contanier">
             <div>
+                <!-- cartas comuns -->
                 <a href="barrildesk.html">
                     <img src="assets/imagens/barril de esqueletos/barril de esqueletos.png" alt="">
                 </a>
@@ -42,24 +57,31 @@
                     <img src="assets/imagens/morteiro/-morteiro.png" alt="">
                 </a>
             </div>
-            <div>
-                <a href="corredor.html">
-                    <img src="assets/imagens/corredor/corredor.png" alt="">
-                </a>
-            </div>
-
+           
             <div>
 
                 <a href="ggreal.html">
-                    <img src="assets/imagens/Gigante real/gigante-real-wiki-da-carta.png" alt="">
+                    <img src="assets/imagens/Gigante real/gigante.real.png" alt="">
                 </a>
             </div>
+            <!-- cartas comuns -->
+
+            <!-- cartas raras -->
 
             <div>
                 <a href="golem-elixir.html">
                     <img src="assets/imagens/golem.elixir/carta-golem-de-elixir-clash-royale.png" alt="">
                 </a>
             </div>
+
+            <div>
+                <a href="corredor.html">
+                    <img src="assets/imagens/corredor/corredor.png" alt="">
+                </a>
+            </div>
+
+
+            
         
             <div>
                 <a href="ariete-batalha.html">
@@ -67,11 +89,23 @@
                 </a>
             </div>
 
+<div>
+    <a href="porcos.html">
+        <img src="assets/cartas/porcos.png" alt="">
+    </a>
+
+
+</div>
+
+
             <div>
                 <a href="gigante.html">
                     <img src="assets/imagens/Gigante/gigante-clash-royale-card.png" alt="">
                 </a>
             </div>
+            <!-- cartas raras -->
+
+            <!-- cartas epicas -->
 
             <div>
                 <a href="balao.html">
@@ -82,6 +116,16 @@
     </main>
 
     <footer>
+        <div class="icones-footer">
+            <a href="https://www.instagram.com/mattheus_zm?igsh=YnRxYWRmZDRjMHIw"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+
+
+        </div>
+        <p>Matheus Rodrigo</p>
         <p>©desenvolvido sem fins lucrativos</p>
 
     </footer>

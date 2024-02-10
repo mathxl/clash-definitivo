@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/rest.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="assets/fndo/Coroa.png" type="image/x-icon">
     <title>Clash Royale decks</title>
 </head>
@@ -14,196 +16,297 @@
 <body>
 
     <header class="header">
+
         <div class="wrapper">
-            <a href="index.html">
-                <p class="title">Matheus</p>
-            </a>
-            <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
+            <div class="wrapper">
+                <a href="index.html">
+                    <p class="title">Matheus</p>
+                </a>
+                <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
+            </div>
         </div>
+
+
         <nav class="nav">
-            <ul class="ul-nav">
-                <li><a href="https://www.instagram.com/mattheus_zm/?igsh=ODA1NTc5OTg5Nw%3D%3D"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://github.com/Math1525"><i class="fa-brands fa-github"></i></a></li>
+            <input class="check" type="checkbox" name="menu" id="menu">
+            <label for="menu">
+                <div class="menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line tree"></div>
+                </div>
+            </label>
+            <ul class="main-nav-ul">
+                <li class="main-nav-itens"><a href="index.html" onclick="desmarcarCheckbox()">inicio</a></li>
+                <li class="main-nav-itens"><a href="abacartas.html" onclick="desmarcarCheckbox()">decks</a></li>
+                <li class="main-nav-itens"><a href="arenas.html" onclick="desmarcarCheckbox()">arenas</a></li>
+                <li class="main-nav-itens"><a href="contato.html" onclick="desmarcarCheckbox()">Contato</a></li>
             </ul>
         </nav>
-
     </header>
-    <h1>Decks de Barril De Esqueletos</h1>
+
+    <!-- decoraçao -->
+
+    <div class="decoracao">
+        
+        <h1 class="titledeck">Decks de Barril De Esqueletos</h1>
+        <img src="assets/decoracao/barril-de-esqueletos-decaracaa.png" alt="" class="imagem-decoracao">
+    </div>
+    
+
+
     <div class="deck">
         <div class="card-deck">
             <div class="cima">
-                <img src="assets/cartas/cavaleirp evp.webp" alt="" class="cartas" title="cavaleiro">
-                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" title="barril de esqueletos">
-                <img src="assets/cartas/arqueiro-magic.png" alt="" class="cartas" title="arqueiro magico">
+                <img src="assets/cartas/cavaleiro.png" alt="" class="cartas" title="Cavaleiro">
+                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" title="Barril de esqueletos">
+                <img src="assets/cartas/arqueiro-magic.png" alt="" class="cartas" title="Arqueiro magico">
                 <img src="assets/cartas/tronco.png" alt="" class="cartas" title="O tronco">
 
             </div>
             <div class="baixo">
-                <img src="assets/cartas/barril-de-goblins.png" alt="" class="cartas" title="barril de goblins">
-                <img src="assets/cartas/gangue-de-goblins.png" alt="" class="cartas" title="gangue de goblins">
-                <img src="assets/cartas/tesla.png" alt="" class="cartas" title="tesla">
-                <img src="assets/cartas/espirito-de-gelo.png" alt="" class="cartas" title="espirito de gelo">
+                <img src="assets/cartas/barril-de-goblins.png" alt="" class="cartas" title="Barril de goblins">
+                <img src="assets/cartas/gangue-de-goblins.png" alt="" class="cartas" title="Gangue de goblins">
+                <img src="assets/cartas/tesla.png" alt="" class="cartas" title="Tesla">
+                <img src="assets/cartas/espirito-de-gelo.png" alt="" class="cartas" title="Espirito de gelo">
+
 
             </div>
+           
+                <div class="elixir-fundo">
+                <img src="assets/cartas/elixirdrop.webp" alt="" class="elixir">
+                <p>2.9</p>
+                </div>
             
-            <a
-                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000000;28000011;26000056;27000006;26000041;28000004;26000062;26000030&slots=1;0;0;0;0;0;0;0&id=G98GQYL"><div class="couche1">
-    	
-                    <div class="couche2">
-            
-                        <div class="couche23">
-                    
-                            <div class="couche3">
-                        
-                                <div class="couche4">
-            
-                                    <span class="battle">Copiar</span>
-                                    
-                                    <div class="couche5">
-                                    
+                
+
+
+                <a
+                    href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000000;28000011;26000056;27000006;26000041;28000004;26000062;26000030&slots=1;0;0;0;0;0;0;0&id=G98GQYL">
+                    <div class="couche1">
+
+                        <div class="couche2">
+
+                            <div class="couche23">
+
+                                <div class="couche3">
+
+                                    <div class="couche4">
+
+                                        <span class="battle">Copiar</span>
+
+                                        <div class="couche5">
+
+                                        </div>
+
                                     </div>
-                        
+
                                 </div>
-            
+
                             </div>
-            
+
                         </div>
-                    
+
                     </div>
-                 
-                </div></a>
+                </a>
+         
         </div>
 
         <div class="card-deck">
             <div class="cima">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
+                <img src="assets/cartas/valquiria.png" alt="" class="cartas" titulo="Valquiria">
+                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" titulo="Barril de esqueletos">
+                <img src="assets/cartas/barril-de-goblins.png" alt="" class="cartas" titulo=" Barril de goblins">
+                <img src="assets/cartas/tronco.png" alt="" class="cartas" titulo="O tronco">
             </div>
             <div class="baixo">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
-                <img src="" alt="" class="cartas" titulo="">
+                <img src="assets/cartas/torre-infern0.png" alt="" class="cartas" titulo="Torre Inferno">
+                <img src="assets/cartas/exercito-de-esqueletos.png" alt="" class="cartas"
+                    titulo="Exercito de esqueletos">
+                <img src="assets/cartas/goblin-com-dardos-.png" alt="" class="cartas" titulo="Goblin com dardo">
+                <img src="assets/cartas/princesa-.png" alt="" class="cartas" titulo="Princesa">
             </div>
-            
+
+            <div class="elixir-fundo">
+                <img src="assets/cartas/elixirdrop.webp" alt="" class="elixir">
+                <p>3.3</p>
+                </div>
+
             <a
-                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=28000011;26000056;28000004;26000011;27000003;26000012;26000040;26000026&slots=1;0;0;0;0;0;0;0&id=G98GQYL"><div class="couche1">
-    	
+                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000011;26000056;28000004;28000011;27000003;26000012;26000040;26000026&slots=1;0;0;0;0;0;0;0&id=G98GQYL">
+                <div class="couche1">
+
                     <div class="couche2">
-            
+
                         <div class="couche23">
-                    
+
                             <div class="couche3">
-                        
+
                                 <div class="couche4">
-            
+
                                     <span class="battle">Copiar</span>
-                                    
+
                                     <div class="couche5">
-                                    
+
                                     </div>
-                        
+
                                 </div>
-            
+
                             </div>
-            
+
                         </div>
-                    
+
                     </div>
-                 
-                </div></a>
+
+                </div>
+            </a>
         </div>
 
         <div class="card-deck">
-            <img src="assets/imagens/barril de esqueletos/log.esqueletos.jpeg" alt="">
+            <div class="cima">
+                <img src="assets/cartas/goblin-com-dardos-.png" alt="" class="cartas" titulo="Goblin com dardo">
+                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" titulo="Barril de esqueletos">
+                <img src="assets/cartas/gangue-de-goblins.png" alt="" class="cartas" titulo="Gangue de goblins">
+                <img src="assets/cartas/barril-de-goblins.png" alt="" class="cartas" titulo="Barril de goblins">
+            </div>
+            <div class="baixo">
+                <img src="assets/cartas/REI.ESQUELETO.webp" alt="" class="cartas" titulo="Rei Esqueleto">
+                <img src="assets/cartas/bola-de-fogo.png" alt="" class="cartas" titulo="Bola de fogp">
+                <img src="assets/cartas/torre-de-bombas.png" alt="" class="cartas" titulo="Torre de bombas">
+                <img src="assets/cartas/tronco.png" alt="" class="cartas" titulo="O tronco">
+            </div>
+
+            <div class="elixir-fundo">
+                <img src="assets/cartas/elixirdrop.webp" alt="" class="elixir">
+                <p>3.3</p>
+                </div>
+
             <a
-                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=28000011;26000056;26000040;26000041;28000000;26000069;27000004;28000004&slots=1;0;0;0;0;0;0;0&id=G98GQYL"><div class="couche1">
-    	
+                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=28000011;26000056;26000040;26000041;28000000;26000069;27000004;28000004&slots=1;0;0;0;0;0;0;0&id=G98GQYL">
+                <div class="couche1">
+
                     <div class="couche2">
-            
+
                         <div class="couche23">
-                    
+
                             <div class="couche3">
-                        
+
                                 <div class="couche4">
-            
+
                                     <span class="battle">Copiar</span>
-                                    
+
                                     <div class="couche5">
-                                    
+
                                     </div>
-                        
+
                                 </div>
-            
+
                             </div>
-            
+
                         </div>
-                    
+
                     </div>
-                 
-                </div></a>
+
+                </div>
+            </a>
 
         </div>
         <div class="card-deck">
-            <img src="assets/imagens/barril de esqueletos/mega.esqueletos.jpeg" alt="">
+            <div class="cima">
+                <img src="assets/cartas/pirotecnica.png" alt="" class="cartas" titulo="Pirotecnica">
+                <img src="assets/cartas/megacavaleiro.png" alt="" class="cartas" titulo="Mega cavaleiro">
+                <img src="assets/cartas/flechas-.png" alt="" class="cartas" titulo="Flechas">
+                <img src="assets/cartas/mago-eletrico.png" alt="" class="cartas" titulo="Mago eletrico">
+            </div>
+            <div class="baixo">
+                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" titulo="Barril de esqueletos">
+                <img src="assets/cartas/mini_PEKKa.png" alt="" class="cartas" titulo="Mini P.E.K.K.A.">
+                <img src="assets/cartas/guardas.png" alt="" class="cartas" titulo="Guardas">
+                <img src="assets/cartas/tronco.png" alt="" class="cartas" titulo="O tronco">
+            </div>
+
+            <div class="elixir-fundo">
+                <img src="assets/cartas/elixirdrop.webp" alt="" class="elixir">
+                <p>3.6</p>
+                </div>
+
             <a
-                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000064;28000011;26000056;26000025;26000042;28000001;26000055;26000018&slots=1;0;0;0;0;0;0;0&id=G98GQYL"><div class="couche1">
-    	
+                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000064;28000011;26000056;26000025;26000042;28000001;26000055;26000018&slots=1;0;0;0;0;0;0;0&id=G98GQYL">
+                <div class="couche1">
+
                     <div class="couche2">
-            
+
                         <div class="couche23">
-                    
+
                             <div class="couche3">
-                        
+
                                 <div class="couche4">
-            
+
                                     <span class="battle">Copiar</span>
-                                    
+
                                     <div class="couche5">
-                                    
+
                                     </div>
-                        
+
                                 </div>
-            
+
                             </div>
-            
+
                         </div>
-                    
+
                     </div>
-                 
-                </div></a>
+
+                </div>
+            </a>
         </div>
 
         <div class="card-deck">
-            <img src="assets/imagens/barril de esqueletos/miner.skeleton.jpeg" alt="">
+            <div class="cima">
+                <img src="assets/cartas/pirotecnica.png" alt="" class="cartas" titulo="Pirotecnica">
+                <img src="assets/cartas/mineiro-.png" alt="" class="cartas" titulo="Mineiro">
+                <img src="assets/cartas/cavaleiro.png" alt="" class="cartas" titulo="Cavaleiro">
+                <img src="assets/cartas/tronco.png" alt="" class="cartas" titulo="O tronco">
+            </div>
+            <div class="baixo">
+                <img src="assets/cartas/veneno.png" alt="" class="cartas" titulo="Veneno">
+                <img src="assets/cartas/torre-de-bombas.png" alt="" class="cartas" titulo="Torre de bombas">
+                <img src="assets/cartas/espirito-de-gelo.png" alt="" class="cartas" titulo="Espirito de gelo">
+                <img src="assets/cartas/barril de esqueletos.png" alt="" class="cartas" titulo="Barril de esqueletos">
+            </div>
+
+            <div class="elixir-fundo">
+                <img src="assets/cartas/elixirdrop.webp" alt="" class="elixir">
+                <p>2.9</p>
+                </div>
+
             <a
-                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000064;28000011;26000000;28000009;26000032;26000056;27000004;26000030&slots=1;0;0;0;0;0;0;0&id=G98GQYL"><div class="couche1">
-    	
+                href="https://link.clashroyale.com/pt?clashroyale://copyDeck?deck=26000064;28000011;26000000;28000009;26000032;26000056;27000004;26000030&slots=1;0;0;0;0;0;0;0&id=G98GQYL">
+                <div class="couche1">
+
                     <div class="couche2">
-            
+
                         <div class="couche23">
-                    
+
                             <div class="couche3">
-                        
+
                                 <div class="couche4">
-            
+
                                     <span class="battle">Copiar</span>
-                                    
+
                                     <div class="couche5">
-                                    
+
                                     </div>
-                        
+
                                 </div>
-            
+
                             </div>
-            
+
                         </div>
-                    
+
                     </div>
-                 
-                </div></a>
+
+                </div>
+            </a>
         </div>
 
 
@@ -215,6 +318,16 @@
 
     </div>
     <footer>
+        <div class="icones-footer">
+            <a href="https://www.instagram.com/mattheus_zm?igsh=YnRxYWRmZDRjMHIw"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+
+
+        </div>
+        <p>Matheus Rodrigo</p>
         <p>©desenvolvido sem fins lucrativos</p>
 
     </footer>

@@ -13,17 +13,31 @@
 
 <body>
     <header class="header">
+
         <div class="wrapper">
-            <a href="index.html">
-           <p class="title">Matheus</p>
-        </a>
-            <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
-        </div>   
+            <div class="wrapper">
+                <a href="index.html">
+                    <p class="title">Matheus</p>
+                </a>
+                <img src="assets/fndo/Coroa.png" alt="" class="Coroa">
+            </div>
+        </div>
+
 
         <nav class="nav">
-            <ul class="ul-nav">
-                <li><a href="https://www.instagram.com/mattheus_zm/?igsh=ODA1NTc5OTg5Nw%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://github.com/Math1525" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <input class="check" type="checkbox" name="menu" id="menu">
+            <label for="menu">
+                <div class="menu">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line tree"></div>
+                    </div>
+            </label>
+            <ul class="main-nav-ul">
+                <li class="main-nav-itens"><a href="index.html" onclick="desmarcarCheckbox()">inicio</a></li>
+                <li class="main-nav-itens"><a href="abacartas.html" onclick="desmarcarCheckbox()">decks</a></li>
+                <li class="main-nav-itens"><a href="arenas.html" onclick="desmarcarCheckbox()">arenas</a></li>
+                <li class="main-nav-itens" ><a href="contato.html" onclick="desmarcarCheckbox()">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -207,8 +221,18 @@
 
 
         <footer>
+            <div class="icones-footer">
+                <a href="https://www.instagram.com/mattheus_zm?igsh=YnRxYWRmZDRjMHIw"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    
+    
+    
+            </div>
+            <p>Matheus Rodrigo</p>
             <p>©desenvolvido sem fins lucrativos</p>
-
+    
         </footer>
 
 </body>
