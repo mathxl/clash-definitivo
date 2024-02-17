@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Bungee';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
     font-family: 'supercell';
     src: url(../font/supercell-magic-webfont.ttf);
@@ -92,7 +93,6 @@ h1 {
     text-transform: uppercase;
     font-size: 2rem;
     margin: 3rem auto 1rem;
-    width: fit-content;
     text-align: center;
     text-shadow: -1px 0 1px #582E00, 
              	1px 0 1px #582E00,
@@ -108,63 +108,33 @@ h1 {
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.contanier div {
-    box-shadow: 0px 0px 15px black;
-    background-color: var(--colorblue2-);
-    padding: .5rem;
-    border-radius: 20px;
-    max-width: 600px;
-    transition: all .3s;
-}
 
-.contanier div:hover {
-    background-color: #2d5f7e;
-}
 
-.contanier div a img {
-    width: 75px;
+.contanier  a img {
+    width: 10rem;
     height: auto;
     object-fit: cover;
     opacity: .8;
 }
 
-.contanier div a img:hover {
+.contanier a img:hover {
     opacity: 1;
 }
-
-@media screen and (min-width: 46.25em) {
-    main {
-        padding: 15rem 0rem;
-    }
-    .contanier div a img {
-        width: 170px;
-    }
-
-    .contanier {
-        justify-content: center;
-        padding: 0px;
-        align-items: center;
-    }
-    h1{
-        font-size: 4rem;
-    }
-    .add{
-        margin:0rem auto 0;
-        background-color: #19356ca3;
-        backdrop-filter: blur(10px);
-        padding: 17px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        max-width: 2000px;
-        border-radius: 20px;
-    
-    }
+.titledeck{
+    font-size: 2rem;
+    text-shadow: -1px 0 1px #582E00, 
+    1px 0 1px #582E00,
+    0 -1px 1px #582E00,
+    0 4px 1px #582E00,
+    -2px 4px 1px #582E00,
+    2px 3px 2px #582E00;
+    margin: 0 0 0 5rem;
+    padding: 0;
 }
+
 
 /* main */
 main {
@@ -178,18 +148,15 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
     font-size: 1.5rem;
     background-color: black;
     padding: 2rem;
     color: white;
     text-align: center;
-    text-shadow: -1px 0 1px #582E00, 
-             	1px 0 1px #582E00,
-             	0 -1px 1px #582E00,
-             	0 4px 1px #582E00,
-             	-2px 4px 1px #582E00,
-             	2px 3px 2px #582E00;
+    
 }
 
 .card-deck {
@@ -211,6 +178,7 @@ footer {
     width: 100%;
     border-radius: 10px;
     transition: all .2s;
+    display: none;
 
 }
 
@@ -302,7 +270,7 @@ i{
     
 }
 .decoracao{
-    width: 150px;
+    max-width: 800px;
     height: 150px;
     caret-color: #6d95df;
     
@@ -436,7 +404,7 @@ i{
 	
 }
 
-.couche5{
+/* .couche5{
 	position:absolute;
 	-webkit-border-radius: 45%;
 	-moz-border-radius: 45%;
@@ -447,7 +415,7 @@ i{
 	height:4px;
 	background:#FFF1B6;
 
-}
+} */
 
 .battle{
 	position:absolute;
@@ -750,8 +718,190 @@ i{
 .imagem-decoracao{
     width: 200px;
     height: 200px;
+    animation: rotateAnimation 2s infinite linear alternate;
+    object-fit: contain;
+
 }
-.titledeck{
-    margin: 0;
-    padding: 0;
+
+.perfil{
+    width: 200px;
+    height: 200px;
+    border-radius:50% 50% 50% 50% / 49% 49% 51% 51%  ;
+    box-shadow:  -5px 5px 0px #701674,
+             5px -5px 0px #de39ff;
+    animation: rotate 3s linear infinite alternate;
+}
+@keyframes rotate {
+    0% {
+        border-radius: 50% 50% 50% 50% / 49% 49% 51% 51%  ;
+     
+    }
+    50% {
+        border-radius: 58% 42% 56% 44% / 35% 50% 50% 65%     ;
+    }
+    100% {
+        border-radius: 50% 50% 50% 50% / 49% 49% 51% 51%  ;
+       
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+.nome{
+    font-size: 40px;
+}
+.informaçoes{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.712);
+    margin-bottom: 10px;
+}
+.card-contatos{
+    margin: auto;
+    padding: 50px 0px;
+    position: relative;
+    background-color: rgb(21, 18, 18);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.cntt{
+    margin-bottom: 30px;
+    width: 100%;
+    border-top: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.cntt p{
+    font-size: 40px;
+}
+.aba1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aba1  div{
+    display: flex;
+    gap: 20px;
+}
+.aba1  a{
+   color: inherit;
+   margin-left: 20px;
+   display: inline-block;
+}
+.aba1  i{
+    margin-left: 10px;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.aba1 span{
+    padding-left: 20px;
+    pointer-events: stroke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 30px;
+   color: white;
+   border: 2px solid rgb(255, 255, 255);
+   transition: all .5s;
+}
+.aba1 span:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.decorativa{
+    width: 300px;
+    height: 300px;
+    border-radius: 42% 58% 45% 55% / 55% 62% 38% 45% ;
+    background-color: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    animation: movee 10s linear infinite alternate;
+    pointer-events: none;
+    z-index: -1;
+}
+.menor{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    animation: movee 13s linear infinite alternate;
+}
+@keyframes movee {
+    0% {
+        border-radius: 50% 50% 50% 50% / 49% 49% 51% 51%  ;
+        transform: translateY(0);
+     
+    }
+    50% {
+        border-radius: 58% 42% 56% 44% / 35% 50% 50% 65%     ;
+        
+    }
+    100% {
+        border-radius: 50% 50% 50% 50% / 49% 49% 51% 51%  ;
+        transform: translateY(350px);
+       
+    }
+}
+
+.fa-arrow-left{
+    color: white;
+    margin-right: 2rem;
+}
+@media screen and (min-width: 46.25em) {
+    .titledeck{
+        font-size: 4rem;
+       
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        padding: 15rem 0rem;
+    }
+    .contanier a img {
+        width: 170px;
+    }
+
+    .contanier {
+        justify-content: center;
+        padding: 0px;
+        align-items: center;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .add{
+        margin:0rem auto 0;
+        background-color: #19356ca3;
+        backdrop-filter: blur(10px);
+        padding: 17px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 2000px;
+        border-radius: 20px;
+    
+    }
 }
