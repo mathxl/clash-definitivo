@@ -28,3 +28,20 @@ window.addEventListener('load', (event) => {
     // Pré-carregar todas as imagens
     images.forEach(preloadImage);
   });
+  function selectItem(item) {
+    // Remove a classe 'selected' de todos os itens
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+        item.classList.remove('selected');
+    });
+
+    // Adiciona a classe 'selected' ao item selecionado
+    item.classList.add('selected');
+
+    // Obtém a posição do item selecionado
+    var container = document.getElementById('menu-container');
+    var selectedItemPosition = item.offsetLeft;
+
+    // Mantém o item selecionado na mesma posição horizontal após a rolagem
+    container.scrollLeft = selectedItemPosition;
+}
