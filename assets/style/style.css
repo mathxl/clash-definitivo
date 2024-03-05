@@ -12,6 +12,9 @@
     --colorwhite-: #f8f9fc;
     --colorblack-: #0000;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'supercell';
@@ -133,7 +136,7 @@ h1 {
     0 4px 1px #582E00,
     -2px 4px 1px #582E00,
     2px 3px 2px #582E00;
-    margin: 5rem 0 0 ;
+    margin: 0 0 0 ;
     padding: 0;
 }
 
@@ -152,7 +155,7 @@ h1 {
 
 /* main */
 main {
-    padding: 15rem 1rem;
+    padding: 10rem 1rem;
     
 
 }
@@ -218,8 +221,8 @@ footer {
 
 .home2 {
 
-    width: 155px;
-    height: 160px;
+    width: 140px;
+    height: 150px;
     border-radius: 22px;
     transition: 0.4s;
     animation: rotateAnimation 2s infinite linear alternate;
@@ -273,7 +276,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 1rem;
 }
 i{
     font-size: 3rem;
@@ -290,8 +293,7 @@ i{
 }
 .tituloaba2{
     text-align: center;
-    
-    font-size:2rem;
+    font-size:1.6rem;
     padding: .5rem;
     margin-bottom: 12px;
     background-color: #ffffff;
@@ -310,6 +312,8 @@ i{
     
 }
 .decoracao{
+    background-color: #041944;
+    border-radius: 20px;
     max-width: 800px;
     height: 150px;
     caret-color: #6d95df;
@@ -956,14 +960,171 @@ i{
 }
 .red{
     color: rgb(126, 0, 0);
+    text-shadow: -1px 0 1px #ffffff, 
+    1px 0 1px #ffffff,
+    0 -1px 1px #ffffff,
+    0 4px 1px #ffffff,
+    -2px 4px 1px #ffffff,
+    2px 3px 2px #ffffff;
 }
 .addd{
 
         border-radius: initial;
 
 }
+.arena-individual{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+    background-color: #19356ca3;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 
+    
+.caixa-arenas{
+    position: absolute;
+    padding: 1rem;
+    top: -150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 320px;
+    background-color: #3fa5e59d;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    
+}
+
+
+.flex-arena{
+    display: flex;
+    gap: 2rem;
+}
+.conteudo-arenas{
+    display: flex;
+    margin: 160px 0 50px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.conteudo-arenas h3{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: -1px 0 1px #582E00, 
+    1px 0 1px #582E00,
+    0 -1px 1px #582E00,
+    0 4px 1px #582E00,
+    -2px 4px 1px #582E00,
+    2px 3px 2px #582E00;
+}
+.sub-arena{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: -1px 0 1px #da6110, 
+        1px 0 1px #d3740e,
+        0 -1px 1px #9e5b12,
+        0 4px 1px #864a09,
+        -2px 4px 1px #312e2b,
+        2px 3px 2px #221d1c;
+
+}
+.conteudo-arenas p{
+    text-align: center;
+    font-size: 1.6rem;
+
+}
+
+
+.banner{
+    margin: 0;
+    padding: 30rem 0;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgb(0, 0, 0)
+    ),url(../fndo/OIG2.1ORyKHcTus\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+
+.banner h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.banner p{
+    font-size: 1.6rem;
+    color: #ffba7a;
+    text-align: center;
+}
+.dicas{
+    padding: 5rem 1rem;
+    background-color: rgba(21, 18, 18, 0.712);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+.title-arena{
+    text-shadow: -1px 0 1px #582E00, 
+    1px 0 1px #582E00,
+    0 -1px 1px #582E00,
+    0 4px 1px #582E00,
+    -2px 4px 1px #582E00,
+    2px 3px 2px #582E00;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.dic{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 196, 0);
+}
+.video{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.arenas-decks{
+    padding: 5rem 1rem;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+.arenas-main{
+        margin-top: 10rem;
+    }
 @media screen and (min-width: 46.25em) {
+    .video{
+        margin: 0 auto;
+        height: 400px;
+        width: 50%;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .dic{
+    font-size: 3rem;
+    }
+    .title-arena{
+        font-size: 5rem;
+    }
     .titledeck2{
         font-size: 4rem;
 
@@ -998,8 +1159,8 @@ i{
     }
     .home2 {
 
-        width: 305px;
-        height: 320px;
+        width: 250px;
+        height: 260px;
     }
     .menu-container{
         display:none;
@@ -1007,7 +1168,12 @@ i{
     .menor{
         display: initial;
     }
+    .cont{
+        position: absolute;
+        top: 0;
+    }
     .titledeck{
+       
         font-size: 6rem;
       
         margin: 3rem 0 0;
@@ -1017,13 +1183,18 @@ i{
     main {
         padding: 15rem 0rem;
     }
+    .arenas-main{
+        margin-top: 0rem;
+    }
     .contanier a img {
         width: 170px;
     }
 
     .contanier {
+        max-width: 1200px;
+        margin: 0 auto;
         justify-content: center;
-        padding: 0px;
+        padding: 5rem 2rem;
         align-items: center;
     }
     h1{
@@ -1046,9 +1217,144 @@ i{
     footer{
         flex-direction: row;
     }
+    .arena-individual{
+        flex-direction: row;
+        position: relative;
+        padding: 5rem;
+        border-radius: 50px;
+        margin: 0 auto;
+        display: flex;
+        width: 850px;
+        background-color: #19356ca3;
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+    
+    
+    .caixa-arenas{
+        position: absolute;
+        padding: 1rem;
+        left: -100px;
+        top: initial;
+        right: initial;
+        width: 400px;
+        height: 420px;
+        background-color: #3fa5e59d;;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        
+    }
+    
+    
+    .flex-arena{
+        display: flex;
+        gap: 2rem;
+    }
+    .conteudo-arenas{
+        display: flex;
+        margin: 20px 300px 20px 300px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .conteudo-arenas h3{
+        font-size: 5rem;
+        text-shadow: -1px 0 1px #582E00, 
+        1px 0 1px #582E00,
+        0 -1px 1px #582E00,
+        0 4px 1px #582E00,
+        -2px 4px 1px #582E00,
+        2px 3px 2px #582E00;
+    }
+    .sub-arena{
+        font-size: 2rem;
+    }
+    .conteudo-arenas p{
+        text-align:left ;
+        font-size: 1.6rem;
+    
+    }
+    .banner{
+        margin: 0;
+        padding: 25rem 0;
+        background:linear-gradient(
+            rgba(0, 0, 0, 0), 
+            rgb(0, 0, 0)
+        ),url(../fndo/OIG2.1ORyKHcTus\ \(1\).jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment:local;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+    
+    .banner h1{
+        font-size: 5rem;
+        margin: 0;
+    }
+    .banner p{
+        font-size: 3rem;
+        color: #ffba7a;
+        text-align: center;
 
-}
+
+}}
 #destruidores{
     width: 155px;
     
+}
+.skew{
+    margin-top:100px;
+	display:inline-block;
+	-ms-transform: skewY(-6deg);
+	-webkit-transform: skewY(-6deg);
+	transform: skewY(-6deg);
+    margin: 30px;
+    
+}
+.skew div{
+    width: 100px;
+
+}
+.img{
+    width: 100%;
+}
+.dicas-recomendados{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items:top;
+    justify-content: center;
+    margin: 8rem 0;
+}
+p{
+    font-size: 15px;
+}
+.cartas-recomendadas{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartas-recomendadas p{
+    text-shadow: -1px 0 1px #000000, 
+        1px 0 1px #000000,
+        0 -1px 1px #000000,
+        0 4px 1px #000000,
+        -2px 4px 1px #000000,
+        2px 3px 2px #000000;
+}
+.card-liberada{
+    display: flex;
+}
+.preto{
+    text-shadow: -1px 0 1px #000000, 
+        1px 0 1px #000000,
+        0 -1px 1px #000000,
+        0 4px 1px #000000,
+        -2px 4px 1px #000000,
+        2px 3px 2px #000000;
+}
+.card-arena{
+    width: 100px;
 }
