@@ -229,3 +229,7 @@ window.addEventListener('load', (event) => {
 		else removeClass(el, className);
 	}
 })();
+window.addEventListener('DOMContentLoaded', (event) => {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+});
