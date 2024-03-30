@@ -889,6 +889,7 @@ i{
    transition: all .5s;
 }
 .aba1 span:hover{
+  transform: scale(1.03);
     background-color: white;
     color: black;
 }
@@ -2178,7 +2179,7 @@ Primary style
   .redes-midias{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   
   }
   .redes-midias-btn{
@@ -2197,6 +2198,14 @@ Primary style
   }
   .ytb{
     background-color: #c2001a;
+    color: white;
+  }
+  .twt{
+    background-color: #772CE8;
+    color: white;
+  }
+  .twt:hover{
+    background-color: #6927cc;
     color: white;
   }
   .ytb:hover{
